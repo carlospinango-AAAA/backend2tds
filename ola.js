@@ -1,0 +1,1 @@
+console.registro("Olá mundo")
