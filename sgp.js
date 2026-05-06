@@ -8,8 +8,7 @@ function calcularPontuacaoTotal(historicoDePontos) {
     
     const pontuacaoFinal = historicoDePontos.reduce(somarRodada, 0);
     return pontuacaoFinal;
-}; name(params) {
-}   
+
  functionfiltraMissoesConcluidas(listaDeMissoes){
     const verificarStatusDaMissao = function(missao) {
         const foiFinalizada = missao.status === "concluída"; //=== Igualdade ESTRITA
@@ -35,7 +34,7 @@ function atualizarInventario(inventarioAtual, acao, nomeDoItem) {
     return novoInventario; //Retornar a mochila do jogador atualizada
 };
 
-const pontosDoJogador =[100, 50, 250, 10]
+const pontosDoJogador =[100, 50, 250, 10];
 const total = calcularPontuacaoTotal(pontosDoJogador);
 console.log("Pontuação final");
 
@@ -46,4 +45,9 @@ const missoes = [
     {nome: "Coletar recursos", status: "concluida"}
 ];
 
-console.log(missoes);
+const  concluidas = filtraMissoesConcluidas(missoes);
+console.log("Missoes Concluidas: " , concluidas);
+
+const mochila = ["Mapa", "Lanterna"];
+const mochilaAtualizada = atualizarInventario("pegar", "Bússola");
+console.log("")
