@@ -3,8 +3,11 @@
 
 const nome = "CarlosD";
 let idade = 67;
-let cargo = "Gerente";
-let salario = 13.500;
+let cargo = "Funcionario";
+
+const salariobase = 12.000;
+const salariobonus = 13.500;
+
 let empresa = "City Boys Corporation";
 
-console.log();
+console.log(`O ${empresajdf} ${nome} `);
