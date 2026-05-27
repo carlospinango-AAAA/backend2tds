@@ -8,10 +8,18 @@ let estaAtivo = true;
 let area = "marketing";
 
 const salariobase = 6300;
-const salariobonus = 6700;
+const salariobonus = 67;
+let salariofinal = salariobase + salariobonus;
 let desconto = 10;
+ 
+
 
 let empresa = "City Boys Corporation";
 
-console.log (`A empresa ${empresa}`);
-console.log(`O salario base do ${cargo} ${nomeDoFuncionario} será de ${salariobase} reais na area de ${area} se ele estiver ${estaAtivo} `);
+console.log ("Essa é a empresa " + empresa);
+
+console.log ("Trabalhador: " + nomeDoFuncionario);
+console.log ("Idade: " + idade);
+console.log (` Ele é o ${cargo} da area de ${area}`);
+console.log ("Salário: " + salariobase);
+console.log ("Salario bonus: " + salariobonus);
